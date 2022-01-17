@@ -147,7 +147,7 @@ const PaymentB = ({
 
   return (
     <div>
-      <h3>Your bill is $ {getAmount()}</h3>
+      <h3>Your bill is Rs {getAmount()}</h3>
       {showbtnDropIn()}
     </div>
   );
