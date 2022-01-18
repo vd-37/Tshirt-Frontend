@@ -128,6 +128,7 @@ const Signup = () => {
       {successMessage()}
       {errorMessage()}
       {signUpForm()}
+      <h5 className="text-center pt-3">Already have an account? Login <Link to="/signup">here.</Link></h5>
     </Base>
   );
 };

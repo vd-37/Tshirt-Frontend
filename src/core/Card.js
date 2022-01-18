@@ -86,7 +86,8 @@ const Card = ({
       </div> */}
       
       {/* <div> */}
-      {getAredirect(redirect)}
+      {/* {getAredirect(redirect)} */}
+      
       <ImageHelper product={product}/>
       <div className="image-desc">
       <h4 className="text-dark text-uppercase">{cartTitle}</h4>
