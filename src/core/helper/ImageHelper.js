@@ -25,6 +25,9 @@ const ImageHelper = ({ product }) => {
     case 'Levis1':
       imageurl = "https://raw.githubusercontent.com/vd-37/TshirtImages/main/levis1.webp";
       break;
+    case 'LEVIS1':
+      imageurl = "https://raw.githubusercontent.com/vd-37/TshirtImages/main/levis1.webp";
+      break;
     case 'Levis2':
       imageurl = "https://raw.githubusercontent.com/vd-37/TshirtImages/main/levis2.webp";
       break;
