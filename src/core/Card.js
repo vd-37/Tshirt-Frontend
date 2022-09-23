@@ -38,7 +38,7 @@ const Card = ({
       addtoCart && (
         <button
           onClick={addToCart}
-          className="btn btn-block btn-outline-success mt-2 mb-2"
+          className="btn btn-block btn-outline-secondary mt-2 mb-2"
         >
           Add to Cart
         </button>
@@ -66,8 +66,8 @@ const Card = ({
   };
 
   return (
-    <div className="card text-white bg-dark border border-info">
-      <div className="card-header lead">{cartTitle}</div>
+    <div className="">
+      {/* <div className="card-header lead">{cartTitle}</div>
       <div className="card-body">
         {getAredirect(redirect)}
         <ImageHelper product={product} />
@@ -83,7 +83,29 @@ const Card = ({
             {showRemoveFromCart(removeFromCart)}
           </div>
         </div>
+      </div> */}
+      
+      {/* <div> */}
+      {/* {getAredirect(redirect)} */}
+      
+      <ImageHelper product={product}/>
+      <div className="image-desc">
+      <h4 className="text-dark text-uppercase">{cartTitle}</h4>
+      <p className="lead text-dark font-italic text-wrap mb-0 text-lowercase">
+          {cartDescription}
+      </p>
+      {/* </div> */}
+     <p className=" font-weight-bold mb-0">Rs {cartPrice}</p>
+     <div className="row">
+          <div className="col-md-9">
+            {showAddToCart(addToCart)}
+          </div>
+          <div className="col-md-12">
+            {showRemoveFromCart(removeFromCart)}
+          </div>
+        </div>
       </div>
+      
     </div>
     
   );

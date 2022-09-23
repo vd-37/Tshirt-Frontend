@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Base from "../core/Base";
 
 const UserDashboard = () => {
   return (
-    <Base title="This is still a work in progress" description="While we work on this, checkout our awesome Tshirt collection in the Home page">
-      <h1>.</h1>
+    <Base title="Hello user," description="This is still a work in progress.">
+      <h3>
+      All good things take time. While our team works on this, take a look at our awesome Tshirt collection <Link to="/">here.</Link></h3>
     </Base>
   );
 };

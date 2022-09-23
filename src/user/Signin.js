@@ -104,7 +104,7 @@ const Signin = () => {
         <div className="col-md-6 offset-sm-3 text-left">
           <form>
             <div className="form-group">
-              <label className="text-light">Email</label>
+              <label className="text-dark">Email</label>
               <input
                 name="email"
                 className="form-control"
@@ -114,7 +114,7 @@ const Signin = () => {
               />
             </div>
             <div className="form-group">
-              <label className="text-light">password</label>
+              <label className="text-dark">Password</label>
               <input
                 name="password"
                 className="form-control"
@@ -136,11 +136,12 @@ const Signin = () => {
   };
 
   return (
-    <Base title="Welcome to sign in page" description="A tshirt store">
+    <Base title="Sign in page" description="WrogX clothing">
       {loadingMessage()}
 
       {signInForm()}
       {performRedirect()}
+      <h5 className="text-center pt-3">Don't have an account? Create one <Link to="/signup">here.</Link></h5>
     </Base>
   );
 };

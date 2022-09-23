@@ -1,3 +1,83 @@
 body {
-  background: #343a40;
+  background: #f5f5f5;
+  overflow-x: hidden !important;
+}
+.bg-image {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+    url(https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.underline:hover {
+  text-decoration: none;
+}
+.underline:after {
+  /*remove comments if error occurs , no effect as of now.*/
+  /* background: none repeat scroll 0 0 transparent; */
+  bottom: 0;
+  content: "";
+  /* display: block; */
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.underline:hover:after {
+  width: 60%;
+  left: 20%;
+  right: 20%;
+}
+
+.padding {
+  padding: 8%;
+}
+
+.tagline {
+  color: rgb(59, 57, 57);
+  text-align: center;
+  align-self: center;
+}
+footer {
+  color: #f5f5f5;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image{
+  transition: transform .5s;
+}
+
+.image:hover{
+  transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  .home{
+    overflow: hidden;
+  }
+  .products-home,
+  .image-desc {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-desc {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }

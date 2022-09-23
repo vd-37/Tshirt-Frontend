@@ -1,1 +1,1 @@
-{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,KACE,kBACF","file":"main.890f977b.chunk.css","sourcesContent":["body {\n  background: #343a40;\n}\n"]}
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,KACE,kBACF","file":"main.890f977b.chunk.css","sourcesContent":["body {\n  background: #fff;\n}\n"]}
