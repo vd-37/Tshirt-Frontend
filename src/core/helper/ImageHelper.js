@@ -20,7 +20,7 @@
 import React from "react";
 
 const ImageHelper = ({ product }) => {
-  var imageurl = "https://raw.githubusercontent.com/vd-37/TshirtImages/main/wrogn4.webp";
+  var imageurl = "https://drive.google.com/file/d/19_gjKsmpuq8lAzktEdeCc8FobGJsgxIX/view?usp=share_link";
   switch ((String)(product.name)) {
     case 'Levis1':
       imageurl = "https://drive.google.com/file/d/1T7gG2eKbt2S-gY73TBp197Vqm5A82EeO/view?usp=share_link";
